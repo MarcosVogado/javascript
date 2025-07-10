@@ -25,8 +25,18 @@
     <p>Já me livrei da maldição.</p>
     <!--Comentário em HTML-->
     <script>
-        var nome = window.prompt('Qual é o seu nome?') //Vai perguntar o nome...
-        var idade = window.prompt('Quanto anos você tem?') //Vai perguntar a idade...
-        window.alert('Olá ' + nome + ', Bom dia! Quer dizer que você já tem ' + idade + ' anos.')
+        /* Pedindo para o usuário digitar 2 números e somando eles */
+        //O comando window.prompt('') lê a variável e sempre transforma em String
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        //Number.parseInt() pega a variável e transforma em um número inteiro
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        //Number.parseFloat() pega a variável e transforma em um número com ponto flutuante ex: 2.0 3.5 10.99
+        var n3 = Number(window.prompt('Digite mais um número: '))
+        //Number() faz com que o javascript escolha se será int ou float
+        
+        var soma = n1 + n2 + n3
+
+        window.alert('A soma dos valores é ' + soma)
+
     </script>
 </html>
