@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio para fixação</title>
+    <style>
+        body {
+            background-color: salmon;
+            color: white;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        var sal = Number(window.prompt('Digite quanto é o seu salário: '))
+
+        salDol = sal / 5.5
+
+        document.write(`Tá patrão em, você ganha ${sal.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})} que em dolar dá ${salDol.toLocaleString('pt-BR', {style:'currency', currency:'USD'})}`)
+        
+    </script>
+</body>
+</html>
