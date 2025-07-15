@@ -10,6 +10,12 @@
             color: white;
             font: normal 15pt Arial;
         }
+
+        #nome {
+            background-color: aliceblue;
+            color: black;
+            font-size: 2em;
+        }
     </style>
 </head>
 <body>
@@ -17,10 +23,16 @@
     <p>Aqui vai o resultado</p>
     <div>Clique em mim</div>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id="nome">Meu nome é Marcos</div>
 
     <script>
         var p1 = window.document.getElementsByTagName('p')[1]
-        window.document.write(`Está escrito assim: ${p1.innerHTML}`)
+        window.document.writeln('Está escrito assim: ' + p1.innerText + '<br>')
+        p1.style.color = 'blue'
+        var div1 = window.document.getElementById('nome')
+        window.document.write(div1.innerHTML)
+        div1.style.background = 'pink'
+        
     </script>
 </body>
 </html>
