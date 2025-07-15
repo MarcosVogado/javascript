@@ -26,13 +26,18 @@
     <div id="nome">Meu nome é Marcos</div>
 
     <script>
+        
         var p1 = window.document.getElementsByTagName('p')[1]
         window.document.writeln('Está escrito assim: ' + p1.innerText + '<br>')
         p1.style.color = 'blue'
+
         var div1 = window.document.getElementById('nome')
         window.document.write(div1.innerHTML)
         div1.style.background = 'pink'
-        
+
+        var corpo = window.document.body
+        corpo.style.fontFamily = 'Times New Roman'
+
     </script>
 </body>
 </html>
