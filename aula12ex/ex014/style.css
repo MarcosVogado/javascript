@@ -25,6 +25,11 @@ main {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
 }
 
+div {
+    text-align: center;
+    padding-top: 10px;
+}
+
 footer {
     font-style: italic;
 }
