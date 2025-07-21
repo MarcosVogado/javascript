@@ -7,6 +7,8 @@ function verificar() {
 
     if (fnao.value.length == 0 || fano.value > ano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
-    } else if ()
+    } else if (){
+        
+    }
 }
 
