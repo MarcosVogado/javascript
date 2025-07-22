@@ -16,11 +16,11 @@ function contar() {
         for (i;i<=fim.value;i++){
             res.innerHTML += `${i}, `
         }
-        res.innerHTML += `<strong>FIM!</strong>`
+        res.innerHTML += `<strong>FIM!</strong><br>`
     } else {
         for (i;i<=fim.value;i+=Number(pas.value)){
             res.innerHTML += `${i}, `
         }
-        res.innerHTML += `<strong>FIM!</strong>`
+        res.innerHTML += `<strong>FIM!</strong><br>`
     }
 }
