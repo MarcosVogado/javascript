@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercicio</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>Tabuada</h1>
     </header>
     <main>
         <div>
-            testando...
+            <label for="num">Número: </label>
+            <input type="number" name="txtn" id="txtn">
+            <input type="submit" value="Gerar Tabuada" onclick="tabuada()">
         </div>
         <div>
-            Olá!
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número a cima...</option>
+            </select>
         </div>
     </main>
     <footer>
