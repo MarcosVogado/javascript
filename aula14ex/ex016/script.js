@@ -7,20 +7,37 @@ function contar() {
     var res = document.getElementById('res')
     //Criando o contador
     var i = Number(ini.value)
+    // Limpando o campo
+    res.innerHTML = `Contando: <br>`
     // Validando e contando
-    if (ini.value < 0 || fim.value <= 0 || ini.value >= Number(fim.value)){
+    if (ini.value < 0 || fim.value <= 0 || ini.value == fim.value){
         window.alert('[ERRO] Preencha os campos corretamente')
     } else if (Number(pas.value < 1)){
         window.alert('Já que não foi posto um valor válido, faremos de 1 em 1 ok!')
-
-        for (i;i<=fim.value;i++){
-            res.innerHTML += `${i}, `
+        if (ini.value < Number(fim.value)) {
+            for (i;i<=fim.value;i++){
+                res.innerHTML += ` ${i} `
+            }
+            res.innerText += ' FIM! '
+            
+        } else {
+            for (i;i>=fim.value;i--){
+                res.innerHTML += ` ${i} `
+            }
+            res.innerText += ' FIM! '
         }
-        res.innerHTML += `<strong>FIM!</strong><br>`
     } else {
-        for (i;i<=fim.value;i+=Number(pas.value)){
-            res.innerHTML += `${i}, `
+        if (ini.value < Number(fim.value)) {
+            for (i;i<=fim.value;i+=Number(pas.value)){
+                res.innerHTML += ` ${i} `
+            }
+            res.innerText += ' FIM! '
+        } else {
+            for (i;i>=fim.value;i-=Number(pas.value)){
+                res.innerHTML += ` ${i} `
+            }
+            res.innerText += ' FIM! '
         }
-        res.innerHTML += `<strong>FIM!</strong><br>`
+    
     }
 }
