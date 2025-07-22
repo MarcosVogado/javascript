@@ -1,0 +1,28 @@
+function contar() {
+    // Pegando os valores digitados nos campos
+    var ini = document.getElementById('inicio')
+    var fim = document.getElementById('fim')
+    var pas = document.getElementById('passo')
+    // Pegando o campo para a resposta
+    var res = document.getElementById('res')
+    //Criando o contador
+    var i = Number(ini.value)
+    // Validando e contando
+    if (ini.value < 0 || fim.value <= 0 || ini.value >= fim.value){
+        window.alert('[ERRO] Preencha os campos corretamente')
+    } else if (pas.value < 1){
+        window.alert('Já que não foi posto um valor válido, faremos de 1 em 1 ok!')
+
+        var i = 1 
+
+        for (i;i<=fim.value;i++){
+            res.innerHTML += `${i}, `
+        }
+        res.innerHTML += `<strong>FIM!</strong>`
+    } else {
+        for (i;i<=fim.value;i+=Number(pas.value)){
+            res.innerHTML += `${i}, `
+        }
+        res.innerHTML += `<strong>FIM!</strong>`
+    }
+}
