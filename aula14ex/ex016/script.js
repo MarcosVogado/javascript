@@ -8,12 +8,10 @@ function contar() {
     //Criando o contador
     var i = Number(ini.value)
     // Validando e contando
-    if (ini.value < 0 || fim.value <= 0 || ini.value >= fim.value){
+    if (ini.value < 0 || fim.value <= 0 || ini.value >= Number(fim.value)){
         window.alert('[ERRO] Preencha os campos corretamente')
-    } else if (pas.value < 1){
+    } else if (Number(pas.value < 1)){
         window.alert('Já que não foi posto um valor válido, faremos de 1 em 1 ok!')
-
-        var i = 1 
 
         for (i;i<=fim.value;i++){
             res.innerHTML += `${i}, `
