@@ -10,7 +10,7 @@ function contar() {
     // Limpando o campo
     res.innerHTML = `Contando: <br>`
     // Validando e contando
-    if (ini.value < 0 || fim.value <= 0 || ini.value == fim.value){
+    if (ini.value < 0 || fim.value < 0 || ini.value == fim.value){
         window.alert('[ERRO] Preencha os campos corretamente')
     } else if (Number(pas.value < 1)){
         window.alert('Já que não foi posto um valor válido, faremos de 1 em 1 ok!')
