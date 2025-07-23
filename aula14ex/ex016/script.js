@@ -1,6 +1,6 @@
 function contar() {
     // Pegando os valores digitados nos campos
-    var ini = document.getElementById('inicio')
+    var ini = document.getElementById('inicio') 
     var fim = document.getElementById('fim')
     var pas = document.getElementById('passo')
     // Pegando o campo para a resposta
