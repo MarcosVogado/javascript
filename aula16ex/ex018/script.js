@@ -21,20 +21,24 @@ function analisar() {
     
     let soma = 0
     let maior = 0
-    let menor = 0
+    let menor = list[0]
 
-    for(let i = list.length-1; i > 0; i--){
+    for(let i = 0; i < list.length; i++){
         soma += list[i]
         if(maior < list[i]){
             maior = list[i]
-        } else if (menor > list[i]){
+        } if (menor > list[i]){
             menor = list[i]
         }
     }
-    res.innerHTML = `Temos ao todo, ${list.length} números cadastrados<br>`
+
+    let media = soma / list.length
+
+    res.innerHTML = `Temos ao todo ${list.length} números cadastrados<br>`
     res.innerHTML += `A soma dos valores é: ${soma}<br>`
-    res.innerHTML += `A soma dos valores é: ${maior}<br>`
-    res.innerHTML += `A soma dos valores é: ${menor}<br>`
+    res.innerHTML += `O maior valor é: ${maior}<br>`
+    res.innerHTML += `O menor valor é: ${menor}<br>`
+    res.innerHTML += `A média dos valores digitados é: ${media}`
 }
 
    
