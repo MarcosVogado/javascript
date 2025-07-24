@@ -50,6 +50,7 @@ function analisar() {
 
     let media = soma / list.length
 
+    //Exibindo na tela
     res.innerHTML = `Temos ao todo ${list.length} números cadastrados<br>`
     res.innerHTML += `A soma dos valores é: ${soma}<br>`
     res.innerHTML += `O maior valor é: ${list[list.length-1]}<br>`
