@@ -8,7 +8,7 @@ function addn() {
 
     if(n < 1 || n > 100){
         window.alert('Adicione um valor entre 1 e 100!')
-    } else {
+    } else if (list.indexOf(n) == -1){
         list.push(n)
 
         res.innerHTML = ''
@@ -20,7 +20,12 @@ function addn() {
         let item = document.createElement('option')
         item.text = `Valor ${n} foi adicionado.`
         seltab.appendChild(item)
+    } else {
+        window.alert('Este valor já exite, adicione um valor diferente!')
     }
+
+    txtn.value = ''
+    txtn.focus()
 
     res.innerHTML = ''
 }
